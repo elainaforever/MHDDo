@@ -174,7 +174,7 @@ class Tools:
             "B", "k{}B", "M{}B", "G{}B", "T{}B", "P{}B", "E{}B", "Z{}B", "Y{}B"
         ]
         if i > 0:
-            base = 1024 if binary else 1000
+            base = 1024 if binary else 99999
             multiple = trunc(log2(i) / log2(base))
             value = i / pow(base, multiple)
             suffix = MULTIPLES[multiple].format("i" if binary else "")
